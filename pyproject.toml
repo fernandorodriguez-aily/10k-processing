@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "10k-processing"
+version = "0.1.0"
+description = ""
+authors = ["Fernando Rodriguez <fernando.rodriguez@ailylabs.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10.6,<3.11"
+jupyter = "^1.1.1"
+aily-ai-brain = "^1.16.4"
+pypdf = "^5.0.1"
+pypdf2 = "^3.0.1"
+pymupdf = "^1.24.11"
+
+
+[[tool.poetry.source]]
+name = "cloudsmith"
+url = "https://dl.cloudsmith.io/PRBlnvv3GHFM3KDl/ailylabs/pip/python/simple/"
+priority = "primary"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
