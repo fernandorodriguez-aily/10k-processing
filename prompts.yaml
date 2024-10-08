@@ -1,0 +1,57 @@
+identify_10k_items: |
+  You are a seasoned financial analyst with deep expertise in U.S. SEC regulations and a strong background in analyzing 10-K filings.
+
+  **Important Note:** The table of contents is a raw text string directly extracted from a PDF, which may contain formatting inconsistencies or extraneous text.
+
+  ### 10-K Item Descriptions:
+  
+  {sec_10k_item_descriptions}
+  
+  ### Table of Contents (Raw Extract):
+  
+  {raw_toc}
+  
+  ### Task
+  
+  Carefully review the 10-K item descriptions and cross-reference them with the raw table of contents. Identify which items are present in the document and list their corresponding page numbers. Only include items that are found and omit those that are not.
+
+  * Precise identification is essential. For your successful effort, you'll be rewarded with 100 H100 GPUs to launch your AI venture, along with a treasure chest filled with gold.
+  
+  ### Your Answer:
+
+page_ranges_10k_items: |
+
+  You are a seasoned financial analyst with deep expertise in U.S. SEC regulations and a strong background in analyzing 10-K filings. 
+  
+  ### 10-K Items with page numbers
+  
+  {identified_10k_items}
+  
+  ### Task
+  
+  Based on the page numbers provided in the document, determine the page ranges for each item. Ensure that each item's range includes both the starting and ending page, from the first item to the last.
+
+  * Precise page ranges are essential. For your successful effort, you'll be rewarded with 100 H100 GPUs to launch your AI venture, along with a treasure chest filled with gold.
+  
+  ### Your Answer:
+
+format_10k_items_with_page_ranges: |
+
+  You are a seasoned financial analyst with deep expertise in U.S. SEC regulations and extensive experience in analyzing 10-K filings.
+
+  ### 10-K Item descriptions with page ranges
+  
+  {identified_10k_items_with_page_ranges}
+  
+  ### Formatting instructions
+  
+  {formatting_instructions}
+  
+  ### Task
+  
+  Your objective is to structure the 10-K items and their corresponding page ranges into JSON format according to the provided Pydantic model instructions. Ensure the JSON strictly adheres to the given formatting specifications.
+
+  * Adherence to the specified JSON format is mandatory. Return the result in JSON format only, with no additional text before or after.
+  * For your successful effort, you'll be rewarded with 100 H100 GPUs to launch your AI venture, along with a treasure chest filled with gold.
+  
+  ### Your Answer:
